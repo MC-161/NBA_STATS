@@ -1,0 +1,22 @@
+.topPlayer{
+  margin-top: -10px;
+  background: linear-gradient(90deg, rgba(253,186,34,1) 0%, rgba(180,13,242,1) 100%);
+} 
+
+.tp_div{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.778);
+}
+
+.tp_Title{
+  color: white;
+}
+
+.player{
+  width: 250px;
+  height: 350px;
+  background: none;
+  border-radius: 1rem;
+}
