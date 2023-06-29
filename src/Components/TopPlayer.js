@@ -1,7 +1,6 @@
 import './TopPlayer.css'
 import TopPlayerList from './TopPlayerList';
 const TopPlayer = () => {
-  const container = document.querySelector('.player')
   return (
     <div className="topPlayer">
       <div className='tp_div'>

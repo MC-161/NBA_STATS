@@ -17,7 +17,7 @@ const TopPlayerList = () => {
             activeOffset={40} 
             shadowScale={1.05}
             className='player cursor-pointer' >
-            <img className='w-full h-full object-cover rounded-xl' src="" alt="" />
+            <img className='w-full h-full object-cover rounded-xl' src={data.imgs[player]} alt="" />
           </Atropos>
         </div>
       ))}

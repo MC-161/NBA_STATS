@@ -45,3 +45,7 @@
 .kobe_stats button:hover{
   background-color: black;
 }
+
+@media (max-width: 640px){
+
+}

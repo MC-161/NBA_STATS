@@ -1,29 +1,29 @@
-.topPlayer{
+.topTeam{
   margin-top: -10px;
   background: linear-gradient(90deg, rgba(253,186,34,1) 0%, rgba(180,13,242,1) 100%);
 } 
 
-.tp_div{
+.tt_div{
   text-align: center;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.778);
 }
 
-.tp_Title{
+.tt_Title{
   color: white;
 }
 
-.player{
-  width: 250px;
-  height: 350px;
+.team{
+  width: 350px;
+  height: 250px;
   background: none;
   border-radius: 1rem;
 }
 
 
 @media (max-width: 640px){
-  .tp_grid{
+  .tt_grid{
     grid-template-columns: repeat(1,1fr);
   }
 }
