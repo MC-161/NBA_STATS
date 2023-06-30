@@ -31,6 +31,9 @@ nav {
   text-decoration: none;
 }
 
+.navbar.scrolled {
+  background-color: #000; /* Update with your desired background color */
+}
 
 @media (max-width: 640px){
   .navbar{

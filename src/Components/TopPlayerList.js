@@ -12,7 +12,7 @@ const TopPlayerList = () => {
   return (
     <div className="tp_grid grid grid-cols-4 gap-20">
       {data.players.map( player =>(
-        <div className="player">
+        <div key={player} className="player">
           <Atropos 
             activeOffset={40} 
             shadowScale={1.05}

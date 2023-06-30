@@ -47,5 +47,13 @@
 }
 
 @media (max-width: 640px){
-
+  .kobe_stats{
+    background-color: rgba(0, 0, 0, 0.475);
+    right: 5px;
+    padding-right: 40px;
+    border-radius: 10px;
+  }
+  .kobe_stats button{
+    background-color: black;
+  }
 }
