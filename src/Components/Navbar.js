@@ -9,7 +9,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const threshold = 700; // Adjust the threshold value as per your requirements
+      const threshold = 200; // Adjust the threshold value as per your requirements
       setIsScrolled(scrollTop > threshold);
     };
 

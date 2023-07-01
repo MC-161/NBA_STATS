@@ -42,8 +42,23 @@
   object-fit: cover;
 }
 
-@media (max-width: 640px){
+@media (max-width: 768px){
   .tt_grid{
     grid-template-columns: repeat(1,1fr);
+  }
+  .team{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border-radius: 1rem;
+  }
+}
+
+@media(max-device-width: 1024px) {
+  .team{
+    width: 200px;
+    height: 200px;
+    background: none;
+    border-radius: 1rem;
   }
 }

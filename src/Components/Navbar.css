@@ -35,8 +35,12 @@ nav {
   background-color: #000; /* Update with your desired background color */
 }
 
-@media (max-width: 640px){
-  .navbar{
-    display: none;
+@media (max-width: 768px){
+  .logo{
+    font-size: 0.9rem;
+    padding: 5px;
+    outline: white solid 1px;
+    margin-left: 10px;
   }
+  
 }

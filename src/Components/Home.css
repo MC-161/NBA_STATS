@@ -9,7 +9,7 @@
 .kobe_stats{
   position: absolute;
   bottom: 40%;
-  right: 5%;
+  right: 10%;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -46,14 +46,45 @@
   background-color: black;
 }
 
-@media (max-width: 640px){
+@media (max-width:768px){
   .kobe_stats{
-    background-color: rgba(0, 0, 0, 0.475);
-    right: 5px;
+    border-radius: 45px;
+    bottom: 40%;
     padding-right: 40px;
-    border-radius: 10px;
+    color: white;
+    width: 80%;
+    background: linear-gradient(90deg, rgba(255,227,0,0.6) 0%, rgba(105, 1, 93, 0.6) 100%);
+    box-shadow:  20px 20px 60px #ffffff,
+             -20px -20px 60px #c4c4c4;
   }
   .kobe_stats button{
-    background-color: black;
+    color: white;
+    border: white 1px solid;
   }
+  
+  .kobe_stats button:hover{
+  background-color: black ;
+}
+}
+
+@media (max-device-width: 1024px) {
+  .kobe_stats{
+    border-radius: 45px;
+    bottom: 40%;
+    padding-right: 40px;
+    outline: white 1px solid;
+    color: white;
+    width: 80%;
+    background: linear-gradient(90deg, rgba(255,227,0,0.6) 0%, rgba(105, 1, 93, 0.6) 100%);
+    box-shadow:  20px 20px 60px #ffffff,
+             -20px -20px 60px #c4c4c4;
+  }
+  .kobe_stats button{
+    color: white;
+    border: white 1px solid;
+  }
+
+.kobe_stats button:hover{
+  background-color: black ;
+}
 }

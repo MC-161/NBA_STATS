@@ -9,10 +9,20 @@ const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if the device is a mobile
-    const userAgent = navigator.userAgent.toLowerCase();
-    const isMobileDevice = /mobile|iphone|ipod|android|blackberry|opera mini|windows mobile|palm|iemobile|symbian/i.test(userAgent);
-    setIsMobile(isMobileDevice);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 658);
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Listen for window resize event
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const backgroundImage = isMobile ? mobileLanding : desktopLanding;

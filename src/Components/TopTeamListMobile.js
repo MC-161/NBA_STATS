@@ -22,7 +22,7 @@ const TopTeamListMobile = () => {
   }, []);
 
   return (
-    <div className="tp_grid grid grid-cols-4 gap-20">
+    <div className="tt_grid grid grid-cols-4 gap-20">
       <div className="swiper-container2">
         <div className="swiper-wrapper">
           {data.teams.map((team) => (

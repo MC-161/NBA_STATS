@@ -42,8 +42,21 @@
 }
 
 
-@media (max-width: 640px){
+@media (max-width: 768px){
   .tp_grid{
     grid-template-columns: repeat(1,1fr);
+    padding-left: 20px;
+  }  
+}
+
+@media(max-device-width: 1024px) {
+  .player{
+    width: 150px;
+    height: 250px;
+    background: none;
+    border-radius: 1rem;
+  }
+  .tp_Grid_Container{
+    padding-right: 70px;
   }
 }
