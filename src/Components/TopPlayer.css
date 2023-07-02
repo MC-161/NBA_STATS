@@ -45,8 +45,14 @@
 @media (max-width: 768px){
   .tp_grid{
     grid-template-columns: repeat(1,1fr);
-    padding-left: 20px;
   }  
+  .swiper-wrapper{
+    padding-bottom: 10rem;
+  }
+  .tp_grid{
+    margin-right: -30px;
+    margin-top: -10px;
+  }
 }
 
 @media(max-device-width: 1024px) {

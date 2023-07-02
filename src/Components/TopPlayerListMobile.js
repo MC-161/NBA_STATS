@@ -19,9 +19,10 @@ const TopPlayerListMobile = () => {
 
   useEffect(() => {
     swiperRef.current = new Swiper('.swiper-container1', {
-      slidesPerView: 'auto',
+      slidesPerView: '2',
       spaceBetween: 10,
       centeredSlides: true,
+      initialSlide:1,
     });
   }, []);
 
