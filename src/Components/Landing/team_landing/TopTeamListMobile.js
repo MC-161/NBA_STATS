@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import { useNavigate } from 'react-router-dom';
 
 const TopTeamListMobile = () => {
+  const navigate = useNavigate()
   const data = {
     teams:['golden_state','bucks','lakers'],
     imgs:{
@@ -21,13 +23,18 @@ const TopTeamListMobile = () => {
     });
   }, []);
 
+  const handleClick = (e) =>{
+    navigate(`/player?query=${e.target.id}`)
+  }
+
   return (
     <div className="tt_grid grid grid-cols-4 gap-20">
       <div className="swiper-container2">
         <div className="swiper-wrapper">
           {data.teams.map((team) => (
-            <div key={team} className="swiper-slide">
+            <div key={team} onClick={(e)=>handleClick(e)}  className="swiper-slide">
               <img
+                id={team} 
                 className="w-full h-full object-cover rounded-xl"
                 src={data.imgs[team]}
                 alt=""

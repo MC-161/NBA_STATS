@@ -1,0 +1,19 @@
+.playerStats{
+  background-image: url('https://wallpaperaccess.com/full/1744056.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stats{
+  width:80%;
+  height: 80%;
+}
+
+.base_info,.headshot,.otherStats{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
