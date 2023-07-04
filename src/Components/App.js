@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './navigation/Navbar';
 import LandingPage from './Landing/LandingPage';
 import PlayerStats from './Players/PlayerStats';
+import PlayerPage from './Players/PlayerPage';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <div className='content'>
             <Routes>
               <Route exact path='/' element={<LandingPage/>}/>
-              <Route exact path='/player' element={<PlayerStats/>}/>
+              <Route exact path='/player' element={<PlayerPage/>}/>
             </Routes>
           </div>
        </div>

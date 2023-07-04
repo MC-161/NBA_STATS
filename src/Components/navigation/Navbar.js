@@ -23,7 +23,9 @@ const NavBar = () => {
   return (
     <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <nav>
+        <Link to='/'>
         <p className="logo">NBA STATS</p>
+        </Link>
         <div className="nav-links">
           <motion.div className="link" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8, backgroundColor: 'black' }}>
             <Link>Teams</Link>

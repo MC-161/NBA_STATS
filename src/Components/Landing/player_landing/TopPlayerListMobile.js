@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router-dom';
 const TopPlayerListMobile = () => {
   const navigate = useNavigate();
   const data = {
-    players: ['jokivic', 'james', 'giannis', 'steph'],
+    players: ['Jokić', 'Lebron', 'giannis', 'steph'],
     imgs: {
-      jokivic:
+      Jokić:
         'https://w0.peakpx.com/wallpaper/928/325/HD-wallpaper-nikola-jokic-mvp-2021.jpg',
-      james:
+      Lebron:
         'https://w0.peakpx.com/wallpaper/445/368/HD-wallpaper-lebron-james-los-angeles-lakers-forward-portrait-creative-art-american-basketball-player-nba-basketball-usa-national-basketball-association.jpg',
       giannis: 'https://wallpaperaccess.com/full/1291368.jpg',
       steph: 'https://images7.alphacoders.com/982/982253.jpg',

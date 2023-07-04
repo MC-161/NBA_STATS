@@ -17,7 +17,7 @@ const useFetchPlayer = (player) => {
       try{
         const response = await fetch(url,options)
         const result = await response.json();
-        setPlayerInfo(result)
+        setPlayerInfo(result.body[0])
         setIsPending(false)
       }catch{
         console.error('Error fetching Player info: ', error);
@@ -26,9 +26,9 @@ const useFetchPlayer = (player) => {
       }
     }
     fetchPlayer()
-  },[player])
+  },[])
 
-  return {playerInfo, isPending};
+  return {playerInfo, isPending, error};
 }
  
 export default useFetchPlayer;

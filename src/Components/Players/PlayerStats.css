@@ -10,10 +10,28 @@
   width:80%;
   height: 80%;
 }
+.weight,.jersey_number{
+  border-bottom: solid 1px white;
+}
+.links{
+  border-top: solid 1px white;
+}
 
 .base_info,.headshot,.otherStats{
+  border-radius: 10px;
   width: 350px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  border-radius: 29px;
+  background: #0000008b;
+  box-shadow:  5px 5px 10px #cccccc,
+               -5px -5px 10px #f4f4f4;
+}
+
+.main_stats{
+  border-radius: 10px;
+  border-radius: 29px;
+  background: #0000005f;
+  box-shadow:  5px 5px 10px #cccccc,
+               -5px -5px 10px #f4f4f4;
 }

@@ -23,7 +23,7 @@ const TopTeamList= () => {
           <Atropos 
             activeOffset={40} 
             shadowScale={1.05}
-            className='team pointer-events-none' >
+            className='team' >
             <img className='w-full h-full object-cover rounded-xl' src={data.imgs[team]} alt="" />
           </Atropos>
         </div>
