@@ -1,0 +1,52 @@
+{
+  "player": [
+    {
+      "espnID": "1966",
+      "espnName": "LeBron James",
+      "nbaComName": "LeBron James",
+      "college": "\u2014",
+      "weight": "250",
+      "nbaComHeadshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
+      "jerseyNum": "6",
+      "team": "LAL",
+      "espnLink": "https://www.espn.com/nba/player/_/id/1966/lebron-james",
+      "bDay": "12/30/1984",
+      "espnHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
+      "nbaComID": "2544",
+      "shortName": "L. James",
+      "nbaComLink": "https://www.nba.com/player/2544",
+      "teamID": "14",
+      "bRefName": "LeBron James",
+      "pos": "SF",
+      "cbsPlayerID": "400553",
+      "longName": "LeBron James",
+      "height": "6-9",
+      "bRefID": "jamesle01",
+      "lastGamePlayed": "20230522_DEN@LAL",
+      "playerID": "2871601440",
+      "exp": "20",
+      "stats": {
+        "blk": "32",
+        "fga": "1219",
+        "DefReb": "392",
+        "ast": "375",
+        "ftp": "76.8",
+        "tptfgp": "32.1",
+        "tptfgm": "121",
+        "stl": "50",
+        "fgm": "609",
+        "pts": "1590",
+        "reb": "457",
+        "fgp": "50.0",
+        "fta": "327",
+        "mins": "1954",
+        "trueShootingAttempts": "1362.9",
+        "gamesPlayed": "55",
+        "TOV": "178",
+        "tptfga": "377",
+        "OffReb": "65",
+        "ftm": "251"
+      }
+    }
+  ]
+}

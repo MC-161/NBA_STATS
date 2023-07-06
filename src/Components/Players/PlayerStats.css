@@ -10,7 +10,7 @@
   width:80%;
   height: 80%;
 }
-.weight,.jersey_number{
+.weight,.jersey_number,.pts{
   border-bottom: solid 1px white;
 }
 .links{
@@ -22,6 +22,7 @@
   width: 350px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 29px;
   background: #0000008b;
   box-shadow:  5px 5px 10px #cccccc,
@@ -34,4 +35,34 @@
   background: #0000005f;
   box-shadow:  5px 5px 10px #cccccc,
                -5px -5px 10px #f4f4f4;
+}
+
+@media (max-width: 768px){
+  .stats-grid-container{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    margin-top: -80px;
+  }
+  .base_info,.headshot,.otherStats{
+    width: 100%;
+    text-align: center;
+  }
+  .playerStats{
+    height: 1500px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+   .stats-grid-container{
+    grid-template-columns: repeat(3,1fr);
+    width: 110%;
+    margin-top: -60px;
+  }
+  .base_info,.headshot,.otherStats{
+    width: 200px;
+    text-align: center;
+  }
+  .main_stats{
+    display: grid;
+  }
 }

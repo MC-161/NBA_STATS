@@ -1,0 +1,72 @@
+.playerCard {
+  position: relative;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.playerCard:hover {
+  transform: translateY(-20px);
+}
+
+.playerCard::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.2em;
+}
+
+.playerCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.playerCard .content {
+  position: relative;
+  padding: 10px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px){
+  .stats-grid-container{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    margin-top: -80px;
+  }
+  .base_info,.headshot,.otherStats{
+    width: 100%;
+    text-align: center;
+  }
+  .playerStats{
+    height: 1500px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+   .stats-grid-container{
+    grid-template-columns: repeat(3,1fr);
+    width: 110%;
+    margin-top: -60px;
+  }
+  .base_info,.headshot,.otherStats{
+    width: 200px;
+    text-align: center;
+  }
+  .main_stats{
+    display: grid;
+  }
+}

@@ -5,6 +5,7 @@ import NavBar from './navigation/Navbar';
 import LandingPage from './Landing/LandingPage';
 import PlayerStats from './Players/PlayerStats';
 import PlayerPage from './Players/PlayerPage';
+import AllPlayers from './Players/AllPlayers';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route exact path='/' element={<LandingPage/>}/>
               <Route exact path='/player' element={<PlayerPage/>}/>
+              <Route exact path='/allPlayers' element={<AllPlayers/>}/>
             </Routes>
           </div>
        </div>
