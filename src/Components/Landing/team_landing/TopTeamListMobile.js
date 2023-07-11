@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router-dom';
 const TopTeamListMobile = () => {
   const navigate = useNavigate()
   const data = {
-    teams:['golden_state','bucks','lakers'],
+    teams:['GS','MIL','LAL'],
     imgs:{
-      golden_state:'https://wallpapercave.com/wp/wp11415269.jpg',
-      bucks:'https://wallpaperaccess.com/full/1743602.jpg',
-      lakers:'https://images3.alphacoders.com/971/971322.jpg',
+      GS:'https://wallpapercave.com/wp/wp11415269.jpg',
+      MIL:'https://wallpaperaccess.com/full/1743602.jpg',
+      LAL:'https://images3.alphacoders.com/971/971322.jpg',
     }
   }
   const swiperRef = useRef(null);
@@ -24,7 +24,7 @@ const TopTeamListMobile = () => {
   }, []);
 
   const handleClick = (e) =>{
-    navigate(`/player?query=${e.target.id}`)
+    navigate(`/team?query=${e.target.id}`)
   }
 
   return (

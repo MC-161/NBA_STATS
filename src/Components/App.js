@@ -3,10 +3,9 @@ import 'animate.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './navigation/Navbar';
 import LandingPage from './Landing/LandingPage';
-import PlayerStats from './Players/PlayerStats';
 import PlayerPage from './Players/PlayerPage';
 import AllPlayers from './Players/AllPlayers';
-
+import TeamPage from './Team/TeamPage';
 function App() {
   return (
     <Router>
@@ -16,6 +15,7 @@ function App() {
             <Routes>
               <Route exact path='/' element={<LandingPage/>}/>
               <Route exact path='/player' element={<PlayerPage/>}/>
+              <Route exact path='/team' element={<TeamPage />}/>
               <Route exact path='/allPlayers' element={<AllPlayers/>}/>
             </Routes>
           </div>

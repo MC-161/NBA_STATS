@@ -4,16 +4,18 @@ import './TopTeam.css';
 const TopTeamList= () => {
   const navigate = useNavigate();
   const data = {
-    teams:['golden_state','bucks','lakers'],
+    teams:['GS','MIL','LAL'],
     imgs:{
-      golden_state:'https://wallpapercave.com/wp/wp11415269.jpg',
-      bucks:'https://wallpaperaccess.com/full/1743602.jpg',
-      lakers:'https://images3.alphacoders.com/971/971322.jpg',
+      GS:'https://wallpapercave.com/wp/wp11415269.jpg',
+      MIL:'https://wallpaperaccess.com/full/1743602.jpg',
+      LAL:'https://images3.alphacoders.com/971/971322.jpg',
     }
   }
 
   const handleClick = (e) =>{
-    navigate(`/player?query=${e.target.id}`)
+    const classNames = e.target.className.split(' '); // Split the class names by whitespace
+    const secondClassName = classNames[1]; // Get the second class name
+    navigate(`/team?query=${secondClassName}`);
   }
 
   return (
@@ -21,6 +23,7 @@ const TopTeamList= () => {
       {data.teams.map( team =>(
         <div key={team} id={team} onClick={(e)=>handleClick(e)}  className="teams">
           <Atropos 
+            scaleClassName={team}
             activeOffset={40} 
             shadowScale={1.05}
             className='team' >
