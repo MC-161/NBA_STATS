@@ -1,12 +1,13 @@
 import PlayerStats from "./PlayerStats";
 import { useLocation } from "react-router-dom";
 import useFetchPlayer from "../utils/useFetchPlayer";
-import useFetchFake from "../utils/useFetchFake";
 
 const PlayerPage = () => {
   const location = useLocation();
   const player = new URLSearchParams(location.search).get("query");
-  const { playerInfo, isPending, error} = useFetchFake()
+  const playerName = player.split(' ').join('%20'); // Split player string and join with %20
+  const { playerInfo, isPending, error} = useFetchPlayer(playerName)
+  
   return (
     <div className="PlayerPage">
       { error && <div> {error} </div>}

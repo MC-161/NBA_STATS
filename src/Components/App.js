@@ -6,6 +6,7 @@ import LandingPage from './Landing/LandingPage';
 import PlayerPage from './Players/PlayerPage';
 import AllPlayers from './Players/AllPlayers';
 import TeamPage from './Team/TeamPage';
+import AllTeams from './Team/AllTeam';
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
               <Route exact path='/player' element={<PlayerPage/>}/>
               <Route exact path='/team' element={<TeamPage />}/>
               <Route exact path='/allPlayers' element={<AllPlayers/>}/>
+              <Route exact path='/allTeams' element={<AllTeams/>}/>
             </Routes>
           </div>
        </div>

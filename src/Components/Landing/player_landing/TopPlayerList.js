@@ -4,18 +4,20 @@ import { useNavigate } from 'react-router-dom';
 const TopPlayerList = () => {
   const navigate = useNavigate();
   const data = {
-    players:['Jokić','Lebron','Giannis', 'Stephen_Curry'],
-    imgs:{
-      Jokić:'https://w0.peakpx.com/wallpaper/928/325/HD-wallpaper-nikola-jokic-mvp-2021.jpg',
-      Lebron:'https://w0.peakpx.com/wallpaper/445/368/HD-wallpaper-lebron-james-los-angeles-lakers-forward-portrait-creative-art-american-basketball-player-nba-basketball-usa-national-basketball-association.jpg',
-      Giannis:'https://wallpaperaccess.com/full/1291368.jpg',
-      Stephen_Curry:'https://images7.alphacoders.com/982/982253.jpg',
-    }
-  }
+    players: ["Nikola Jokić", "LeBron James", "Giannis Antetokounmpo", "Stephen Curry"],
+    imgs: {
+      "Nikola Jokić": "https://w0.peakpx.com/wallpaper/928/325/HD-wallpaper-nikola-jokic-mvp-2021.jpg",
+      "LeBron James": "https://w0.peakpx.com/wallpaper/445/368/HD-wallpaper-lebron-james-los-angeles-lakers-forward-portrait-creative-art-american-basketball-player-nba-basketball-usa-national-basketball-association.jpg",
+      "Giannis Antetokounmpo": "https://wallpaperaccess.com/full/1291368.jpg",
+      "Stephen Curry": "https://images7.alphacoders.com/982/982253.jpg",
+    },
+  };
+  
   const handleClick = (e) =>{
     const classNames = e.target.className.split(' '); // Split the class names by whitespace
     const secondClassName = classNames[1]; // Get the second class name
-    navigate(`/player?query=${secondClassName}`);
+    const thirdClassName = classNames[2]; // Get the second class name
+    navigate(`/player?query=${secondClassName} ${thirdClassName}`);
   }
   return (
     <div className="tp_grid grid grid-cols-4 gap-20">

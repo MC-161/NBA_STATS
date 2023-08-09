@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react";
 
-const useFetchFake = (player) => {
-  const [playerInfo, setPlayerInfo] = useState('')
+const useFetchFake = (playerName) => {
+  const [playerInfo, setPlayerInfo] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
-  const url =`http://localhost:8000/player`;
-  useEffect(() =>{
-    const fetchPlayer = async() => {
-      try{
-        const response = await fetch(url)
+  const url = `https://tank01-fantasy-stats.p.rapidapi.com/getNBAPlayerInfo?playerName=${playerName}&statsToGet=totals`;
+  
+  useEffect(() => {
+    const fetchPlayer = async () => {
+      try {
+        const response = await fetch(url);
         const result = await response.json();
-        setPlayerInfo(result[0])
-        setIsPending(false)
-      }catch{
+        setPlayerInfo(result);
+        setIsPending(false);
+      } catch (error) {
         console.error('Error fetching Player info: ', error);
         setIsPending(false);
         setError(error.message);
       }
-    }
-    fetchPlayer()
-  },[])
+    };
+    fetchPlayer();
+  }, [playerName]);
 
-  return {playerInfo, isPending, error};
-}
- 
+  return { playerInfo, isPending, error };
+};
+
 export default useFetchFake;

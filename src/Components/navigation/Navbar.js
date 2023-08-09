@@ -28,7 +28,7 @@ const NavBar = () => {
         </Link>
         <div className="nav-links">
           <motion.div className="link" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8, backgroundColor: 'black' }}>
-            <Link>Teams</Link>
+            <Link to="/allTeams">Teams</Link>
           </motion.div>
           <motion.div className="link" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8, backgroundColor: 'black' }}>
             <Link to='/allPlayers'>Player</Link>
