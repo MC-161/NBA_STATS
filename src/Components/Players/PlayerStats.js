@@ -38,7 +38,7 @@ const PlayerStats = ({playerInfo}) => {
                 <p className='text-xl mt-4'>{player_Stats?.pts}</p>
               </div>
               <div className="mins text-center">
-                <h4 className="text-center p-2 text-center">Minutes</h4>
+                <h4 className="text-center p-2">Minutes</h4>
                 <p className='text-xl mt-4'>{player_Stats?.mins}</p>
               </div>
               <div className="games outline outline-1 text-center">

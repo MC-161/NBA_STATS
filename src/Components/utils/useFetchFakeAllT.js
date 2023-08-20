@@ -1,27 +1,32 @@
 import { useEffect, useState } from 'react';
+import database from '../../firebase';
+import { get, ref, onValue } from 'firebase/database'; // Import from firebase/database
 
-const useFetchFakeAllT = () => {
+const useFetchFirebaseAllTeams = () => {
   const [teams, setTeams] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const response = await fetch('http://localhost:8002/body');
-        const data = await response.json();
-        setTeams(data);
-        setIsPending(false)
+        const teamsRef = ref(database, 'teams/body'); // Reference to the 'body' element under 'teams' node
+        onValue(teamsRef, (snapshot) => {
+          const data = snapshot.val();
+          setTeams(data);
+          setIsPending(false);
+        });
       } catch (error) {
         console.error('Error fetching teams:', error);
-        setIsPending(false)
-        setError(error.message)
+        setIsPending(false);
+        setError(error.message);
       }
     };
 
     fetchTeams();
   }, []);
 
-  return {teams, isPending, error};
+  return { teams, isPending, error };
 };
 
-export default useFetchFakeAllT;
+export default useFetchFirebaseAllTeams;
