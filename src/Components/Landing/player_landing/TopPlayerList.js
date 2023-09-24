@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 const TopPlayerList = () => {
   const navigate = useNavigate();
   const data = {
-    players: ["Nikola Jokić", "LeBron James", "Giannis Antetokounmpo", "Stephen Curry"],
+    players: ["Kevin Durant", "LeBron James", "Giannis Antetokounmpo", "Stephen Curry"],
     imgs: {
-      "Nikola Jokić": "https://w0.peakpx.com/wallpaper/928/325/HD-wallpaper-nikola-jokic-mvp-2021.jpg",
+      "Kevin Durant": "https://wallpapers.com/images/hd/blue-kevin-durant-cool-8nod6bth5sn7cyu1.jpg",
       "LeBron James": "https://w0.peakpx.com/wallpaper/445/368/HD-wallpaper-lebron-james-los-angeles-lakers-forward-portrait-creative-art-american-basketball-player-nba-basketball-usa-national-basketball-association.jpg",
       "Giannis Antetokounmpo": "https://wallpaperaccess.com/full/1291368.jpg",
       "Stephen Curry": "https://images7.alphacoders.com/982/982253.jpg",

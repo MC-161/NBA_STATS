@@ -8,7 +8,7 @@ const AllTeam = () => {
   return (
     <div className="bg-black h-screen overflow-y-scroll">
       <div className="allPlayers  h-screen text-white bg-no-repeat pt-12 bg-[url('https://wallpaper.dog/large/17206943.jpg')] ">  
-      <h1 className="text-center text-2xl">All Players</h1>
+      <h1 className="text-center text-2xl">All Teams</h1>
       <div className="w-100 flex justify-center">
         <div className=" p-2 flex w-full flex-wrap items-stretch w-80">
           <input

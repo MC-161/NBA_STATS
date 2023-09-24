@@ -42,7 +42,7 @@ const Home = () => {
           <p className='kBirth'>1978-2020</p>
           <p>Mamba</p>
           <motion.div className="link" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8}}>
-            <button id='kobe' onClick={(e)=>handleClick(e)} className='rounded-lg'> All Time Stats</button>
+            <button id='Kobe' onClick={(e)=>handleClick(e)} className='rounded-lg'> All Time Stats</button>
           </motion.div>
         </div>
       </div>
