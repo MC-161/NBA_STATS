@@ -1,71 +1,85 @@
-# Getting Started with Create React App
+# NBA Stats Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the NBA Stats Web App! This web application provides users with the ability to view statistics for current NBA players and teams. It is built using React, Tailwind CSS, Atropos.js, Swiper.js, and Firebase.
+## Screenshots
 
-## Available Scripts
+![Screenshot 2023-11-16 at 14 35 12](https://github.com/MC-161/NBA_STATS/assets/95971638/8f0bcd08-368d-4613-8924-081200b49915)
 
-In the project directory, you can run:
+![Screenshot 2023-11-16 at 14 35 53](https://github.com/MC-161/NBA_STATS/assets/95971638/f9265ce1-1e2c-404d-a478-79bc29bf35be)
 
-### `npm start`
+![Screenshot 2023-11-16 at 14 36 59](https://github.com/MC-161/NBA_STATS/assets/95971638/e369d3ee-a77d-4ad9-a1af-e3cc3a698a31)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 2023-11-16 at 14 37 46](https://github.com/MC-161/NBA_STATS/assets/95971638/9cca8f79-1cdf-43cc-8d3e-48fa36cb5a85)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- Add more screenshots as needed -->
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Player Stats:**
+  - View detailed statistics for current NBA players.
+  - Explore player profiles, including points, rebounds, assists, and more.
+  - Dynamic and interactive UI for an engaging user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Team Stats:**
+  - Access comprehensive statistics for NBA teams.
+  - Explore team performance, rankings, and player rosters.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React:** A JavaScript library for building user interfaces, providing a fast and interactive experience.
+- **Tailwind CSS:** A utility-first CSS framework for styling the application with ease.
+- **Atropos.js:** A library for creating smooth and interactive scroll-based animations.
+- **Swiper.js:** A modern mobile touch slider with hardware-accelerated transitions.
+- **Firebase:** A comprehensive backend service for real-time database and authentication.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get started with the NBA Stats Web App, follow these steps to install the necessary dependencies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the Repository:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    git clone https://github.com/your-username/nba-stats-web-app.git
+    ```
 
-## Learn More
+2. **Navigate to the Project Directory:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd nba-stats-web-app
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Install Node Modules:**
 
-### Code Splitting
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Set Up Firebase:**
 
-### Analyzing the Bundle Size
+   - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/).
+   - Add your Firebase configuration details in the appropriate files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. **Run the App:**
 
-### Making a Progressive Web App
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+6. **Open in Browser:**
 
-### Advanced Configuration
+   - Open your browser and go to `http://localhost:3000` to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Now, you should have all the dependencies installed and the app up and running locally. Feel free to explore the NBA player and team statistics on your web app!
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+We welcome contributions from the community! If you want to contribute to the NBA Stats Web App, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# NBA_STATS
+This project is licensed under the [MIT License](LICENSE).
+
+
